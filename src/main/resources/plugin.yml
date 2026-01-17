@@ -1,0 +1,5 @@
+name: ${plugin.name}
+version: ${project.version}
+main: ${plugin.main.classpath}
+api-version: 1.13
+author: Fr33styler

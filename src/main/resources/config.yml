@@ -1,0 +1,5 @@
+settings:
+  ban-after-deaths: 3
+messages:
+  broadcast-lost-lives: '&c%player% has lost all their lives!'
+  ban-message: '&cYou have died for the last time! You have been banned!'
