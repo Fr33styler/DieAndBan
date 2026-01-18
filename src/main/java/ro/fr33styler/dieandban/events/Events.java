@@ -28,7 +28,7 @@ public class Events implements Listener {
         DeathHolder holder = new DeathHolder();
         plugin.getDeaths().put(uuid, holder);
 
-        plugin.getPlayerData().synchroniseOrInsert(uuid, holder);
+        plugin.getPlayerData().fetchOrInsert(uuid, holder);
     }
 
     @EventHandler

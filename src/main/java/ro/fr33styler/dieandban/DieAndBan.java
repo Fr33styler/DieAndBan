@@ -55,7 +55,7 @@ public class DieAndBan extends JavaPlugin {
             DeathHolder holder = new DeathHolder();
             deaths.put(uuid, holder);
 
-            playerData.synchroniseOrInsert(uuid, holder);
+            playerData.fetchOrInsert(uuid, holder);
         }
 
         getServer().getPluginManager().registerEvents(events, this);

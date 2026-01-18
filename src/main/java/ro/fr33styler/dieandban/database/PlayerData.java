@@ -29,7 +29,7 @@ public class PlayerData {
         }
     }
 
-    public void synchroniseOrInsert(UUID uuid, DeathHolder holder) {
+    public void fetchOrInsert(UUID uuid, DeathHolder holder) {
         executor.submit(() -> {
             try (PreparedStatement statement = connection.prepareStatement("SELECT deaths FROM die_and_ban WHERE uuid = ? LIMIT 1;")) {
                 statement.setString(1, uuid.toString());
